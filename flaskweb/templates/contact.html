@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import qux %}
+
+{% block content %}
+{% set name='baz' %}
+<h1>How to Contact Max</h1>
+
+<p>
+If you would like to keep in touch with me here are some resources:
+<ul class="contact">
+    <li><a href="https://github.com/mwaldt">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/max-waldt-a6962934/">LinkedIn</a></li>
+    <li><a href="">Link</a></li>
+</ul>
+</p>
+{% endblock %}

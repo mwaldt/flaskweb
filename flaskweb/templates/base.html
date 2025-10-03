@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <title>{% block title %}Max Waldt{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% block styles %}
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css' ) }}">
+        {% endblock %}
+    {% endblock %}
+</head>
+<body>
+<nav>
+    <ul class="horizontal">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('resume') }}">Resume</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+    </ul>
+</nav>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    {% block footer %}
+        <small> &copy; 2025 <a href="https://github.com/mwaldt" title="My GitHub page">GitHub</a> /
+            <a href="https://www.linkedin.com/in/max-waldt-a6962934/" title="My LinkedIn profile">LinkedIn</a>
+        </small>
+    {% endblock %}
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

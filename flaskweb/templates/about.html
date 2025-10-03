@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import qux %}
+
+{% block content %}
+{% set name='baz' %}
+<h1>About Max</h1>
+
+<div class="large-text-blob-fill">
+<p>
+Max Waldt is a Software Engineer, DevOps practitioner, and Linux systems administrator with a focus on building robust, scalable backend systems. He works primarily with Python and bash, with additional experience in Ruby, Go, and JavaScript.
+</p><p>
+Over the years, Max has designed and implemented automation solutions that reduce downtime, streamline developer workflows, and improve system reliability. His projects include creating automated datacenter failover tools, building CI/CD pipelines for distributed teams, and developing SAML/SSO integrations for secure user lifecycle management. He has also led efforts to modernize and stabilize 100+ legacy microservices, built libraries for generating PII-compliant test data, and automated cross-team task management processes.
+</p><p>
+Max’s work blends deep technical expertise with a strong focus on operational efficiency, security, and long-term maintainability.
+</p>
+</div>
+{% endblock %}
